@@ -24,5 +24,5 @@ var regex = new RegExp(['pattern', ['g'|'i'|'m']])
 
 ## 参考链接
 
-- [简短.上篇](http://www.cnblogs.com/giggle/p/5532453.html)
+- [简短.上篇](http://www.cnblogs.com/giggle/p/5532453.html)
 - [完整教程](https://juejin.im/post/5965943ff265da6c30653879)
