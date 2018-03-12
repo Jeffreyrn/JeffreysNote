@@ -3,11 +3,12 @@
 ## 类型
 
 - 原始类型保存为简单数值 引用类型保存为对象
-- [函数](#%E5%87%BD%E6%95%B0)
-- [对象](#%E5%AF%B9%E8%B1%A1)
-  - [对象的extensible特性](#%E5%AF%B9%E8%B1%A1%E7%9A%84extensible%E7%89%B9%E6%80%A7)
-  - [构造函数与原型对象](#%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E4%B8%8E%E5%8E%9F%E5%9E%8B%E5%AF%B9%E8%B1%A1)
-- [继承](#%E7%BB%A7%E6%89%BF)
+- 函数的字面形式定义
+- 正则表达式的字面形式定义
+- instanceof所有引用类型亦可被鉴别为object
+- typeof只可以鉴别的引用类型只有函数，其他均返回object，为了鉴别其他引用类型，需要instanceof
+- instanceof Array在不同frame之间无法识别，所以需要Array.isArray()
+- 为了让原始类型看上去更像引用类型，提供了特殊的引用类型：三种原始封装类型String Number Boolean 原始类型添加的自定义属性会在添加后立刻被销毁 临时对象只在被读取时创建 instanceof Object 得到false 手工创建则得到true避免手工创建原始类型
 
 ## 函数
 
