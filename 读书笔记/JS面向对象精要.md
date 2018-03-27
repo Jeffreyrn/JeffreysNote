@@ -51,7 +51,8 @@
 - 混入模式mixin 一个对象在不改变原型链对象的情况下得到了另一个对象的属性称为混入 第一个对象（接受者）通过直接复制第二个对象（提供者）的属性从而接受了这些属性
 - 如果想要访问器属性被复制，需要不同的mixin函数
 - 不使用new操作符也可以工作的构造函数称为*作用域安全*的构造函数 例如Object Array RegExp Error等
-```
+
+```javascript
 function Person(name) {
   if(this instanceof Person) {
     this.name = name
