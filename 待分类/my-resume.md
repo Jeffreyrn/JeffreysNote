@@ -4,8 +4,6 @@
 - Email: jeffreywangxiao@gmail.com
 - 微信号: jeffreysama
 
----
-
 ## 个人信息
 
 - **王潇** / 男 / 1989
@@ -14,8 +12,6 @@
 - 工作年限: 5年
 - Github: <https://github.com/Jeffreyrn>
 - 期望职位: 前端开发 / 深圳
-
----
 
 ## 工作经历
 
@@ -33,7 +29,7 @@
 
 #### 七轴机械臂操作平台项目
 
-开发周期两个月，复制机械臂仿真模型的实现与模块化任务管理界面；使用Three.js实现了模型的导入和动画，模型组件化，方便其他模块对其引用和控制；模型界面可以自适应窗口大小，并在窗口resize事件时使用throttle，优化性能；使用WebSocket和后台通信
+开发周期两个月，负责实现机械臂仿真模型与模块化任务管理界面的桌面端页面；使用Three.js实现了模型的导入和动画，模型组件化，方便其他模块对其引用和控制；模型界面可以自适应窗口大小，并在窗口resize事件时使用throttle，优化性能；使用WebSocket和后台通信
 
 ### [迈沣集团有限公司](https://www.madmadgroup.com/) (2014.06 - 2016.09)
 
@@ -58,11 +54,8 @@
 
 #### 其他项目
 
-[香港贸易发展局的配对服务平台](http://businessmatching.hktdc.com/en/index.html)：独立开发，周期6个月，i18n三种语言，前端使用JavaScript + jQuery + CSS，后端使用ASP.NET + MySQL实现CMS的登陆，页面编辑，图片上传，用户管理等功能。
-
-[Sino Dynamic官网项目](http://www.sinodynamic.com)： 负责后台搭建和新闻管理的开发，周期1个月，采用了Express.js + Bootstrap 开发，响应式布局。
-
----
+- [香港贸易发展局的配对服务平台](http://businessmatching.hktdc.com/en/index.html)：独立开发，周期6个月，i18n三种语言，前端使用JavaScript + jQuery + CSS，后端使用ASP.NET + MySQL实现CMS的登陆，页面编辑，图片上传，用户管理等功能。
+- [Sino Dynamic官网项目](http://www.sinodynamic.com)： 负责后台搭建和新闻管理的开发，周期1个月，采用了Express.js + Bootstrap 开发，响应式布局。
 
 ## 技能清单
 
