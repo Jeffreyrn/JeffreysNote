@@ -1,5 +1,6 @@
 # 响应式
-```
+
+```javascript
 function observer(value, cb) {
   // cb is callback
   Object.keys(value).forEach((key) => defineReactive(value, key, value[key], cb))

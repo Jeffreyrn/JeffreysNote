@@ -4,15 +4,15 @@
 
 ### 字面量
 
-``
+```javascript
 var regex = /pattern/[g|i|m]
-``
+```
 
 ### 构造函数
 
-``
+```javascript
 var regex = new RegExp(['pattern', ['g'|'i'|'m']])
-``
+```
 
 ## 末尾可选字符 g i m 含义
 
