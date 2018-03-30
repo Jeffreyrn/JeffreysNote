@@ -24,16 +24,16 @@
 - 属性有两种类型：数据属性(value writable)和访问器属性 访问器属性不包含值 而是定义了一个当属性被读取时调用的函数getter setter
 - 前置下划线是一个约定俗成的命名规范 表示该属性是私有的 实际是它还是公开的
 - 有两个属性特征是数据属性和访问器属性都具有的 enumerable configurable
-- Object.defineProperty 被调用时 如果属性不存在 将根据描述对象创建
+- *Object.defineProperty 被调用时 如果属性不存在 将根据描述对象创建
 - 访问器属性特征比字面形式定义访问器属性的优势在于 可以为已有对象定义这些属性
 - 如果创建一个同时具有数据和访问器的属性 将会出错
-- Object.defineProperties Object.getOwnPropertyDescriptor
+- *Object.defineProperties Object.getOwnPropertyDescriptor
 
 ### 对象的extensible特性
 
-- 禁止扩展preventExtensions isExtensible
-- 对象封印seal isSealed
-- 冻结对象freeze isFrozen
+- 禁止扩展preventExtensions isExtensible 不可扩展
+- 对象封印seal isSealed 不可扩展 不可配置
+- 冻结对象freeze isFrozen 不可扩展 不可配置 不可改写
 
 ### 构造函数与原型对象
 
@@ -43,13 +43,13 @@
 
 ## 继承
 
-- 在给原型对象添加属性前要确保已经改写了原型对象，否则在改写时会丢失之前添加的方法
+- *在给原型对象添加属性前要确保已经改写了原型对象，否则在改写时会丢失之前添加的方法
 
 ## 对象模式
 
 - 模块模式是一种使用IIFE创建拥有私有数据的单个对象的模式 而构造函数模式可以创建多个对象
 - 混入模式mixin 一个对象在不改变原型链对象的情况下得到了另一个对象的属性称为混入 第一个对象（接受者）通过直接复制第二个对象（提供者）的属性从而接受了这些属性
-- 如果想要访问器属性被复制，需要不同的mixin函数
+- *如果想要访问器属性被复制，需要不同的mixin函数
 - 不使用new操作符也可以工作的构造函数称为*作用域安全*的构造函数 例如Object Array RegExp Error等
 
 ```javascript
