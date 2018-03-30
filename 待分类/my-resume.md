@@ -25,11 +25,11 @@
 
 开发周期三个月，负责桌面软件的前端开发的50%，技术栈Electron + Webpack + Vue.js + vue-router + Vuex + Axios + Node.js；
 使用Google Blockly实现图形化编程；使用Fabric.js实现了画板功能；使用Canvas绘制实时控制界面；
-通过requestAnimationFrame和预渲染提升Canvas性能。使用Promise实现异步操作；解决了部分页面内存泄露的问题，使用js模块懒加载改进速度。
+通过预渲染提升Canvas性能；使用Promise实现异步操作；解决了部分页面内存泄露的问题，使用js模块懒加载改进速度。
 
 #### 七轴机械臂操作平台项目
 
-开发周期两个月，负责实现机械臂仿真模型与模块化任务管理界面的桌面端页面；使用Three.js实现了模型的导入和动画，模型组件化，方便其他模块对其引用和控制；模型界面可以自适应窗口大小，并在窗口resize事件时使用throttle，优化性能；使用WebSocket和后台通信
+开发周期两个月，负责实现机械臂仿真模型与模块化任务管理界面的桌面端页面；使用Three.js实现了模型的导入和动画，模型组件化，方便其他模块对其引用和控制；模型界面可以自适应窗口大小，并在窗口resize事件时使用requestAnimationFrame，优化绘制效率性能58%以上；使用WebSocket和后台通信
 
 ### [迈沣集团有限公司](https://www.madmadgroup.com/) (2014.06 - 2016.09)
 
