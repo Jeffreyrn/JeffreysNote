@@ -37,7 +37,7 @@
 
 担任全栈开发，改进网站响应速度和性能优化，负责60%的功能实现；
 前端起初采用了 RequireJS + mustache.js + Bootstrap 框架提高开发效率，响应式布局。因为页面编辑对DOM操作愈发复杂，使用 Vue.js 替代 jQuery + mustache.js；
-实现分页无刷新跳转和搜索筛选排序功能，页面滚动和输入事件中使用Lodash库的debounce函数防抖，使用JavaScript策略模式优化表单验证代码；商家封面图片使用dataURL减少HTTP请求和带宽，图片存储CDN使用了Amazon S3；
+实现分页无刷新跳转和搜索筛选排序功能，页面滚动和输入事件中使用Lodash库的debounce函数防抖，使用JavaScript策略模式优化表单验证代码；商家小图片使用dataURL减少HTTP请求和带宽，图片存储CDN使用了Amazon S3；
 使用Gulp优化工作流程及编译Sass；
 后台使用PHP实现Restful API接口，包括图像处理，登陆验证，页面请求，数据库处理；
 
