@@ -1,4 +1,5 @@
 ## 图像文件处理步骤
+
 - 获取 input[type="file"] 控件上的图像文件对象；
 - 使用 window.URL/FileReader 获取图像路径（BlobURL/DataURL）并通过 Image 对象载入；
 - 通过载入图像的 Image 对象绘制到 canvas 画布上；
