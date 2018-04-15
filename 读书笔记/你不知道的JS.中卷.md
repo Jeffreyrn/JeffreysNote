@@ -45,6 +45,6 @@
 
 ## Promise
 
-* 术语 决议resolve 完成fulfill 拒绝reject resolve既可以表示完成或拒绝 比fulfill更恰当
+* 术语 待定pending 决议resolve 完成fulfill 拒绝reject resolve既可以表示完成或拒绝 比fulfill更恰当
 * promise没有采用error first 而是采用了分离回调split callback
-* promise.race竞态
+* promise.race竞态 可以实现promise超时
