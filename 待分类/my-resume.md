@@ -63,3 +63,4 @@
 - 开发工具: Git / NPM / Shell / VS Code / Electron / Webpack / Gulp / Shell / Chrome DevTools
 - 开发框架: Vue.js / RequireJS / Express.js / Bootstrap / jQuery
 - 后端语言: PHP / Node.js / MySQL / Python / ASP.NET
+- 测试工具: LightHouse / PageSpeed / YSlow
