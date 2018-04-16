@@ -29,9 +29,9 @@
 
 #### 七轴机械臂操作平台项目
 
-开发周期两个月，负责实现机械臂仿真模型与模块化任务管理界面的桌面端页面；使用Three.js实现了模型的导入和动画，模型组件化，方便其他模块对其引用和控制；模型界面可以自适应窗口大小，并在窗口resize事件时使用requestAnimationFrame，优化绘制效率性能58%以上；使用WebSocket和后台通信
+开发周期两个月，负责实现机械臂仿真模型与模块化任务管理界面的桌面端页面；使用Three.js实现了模型的导入和动画，模型组件化，方便其他模块对其引用和控制；模型界面可以自适应窗口大小，并在窗口resize事件时使用requestAnimationFrame，优化绘制效率性能58%以上；使用WebSocket和后台通信。
 
-### [迈沣集团有限公司](https://www.madmadgroup.com/) (2014.06 - 2016.09)
+### [香港迈沣集团有限公司](https://www.madmadgroup.com/) (2014.06 - 2016.09)
 
 #### [NextMedia广告管理平台项目](http://uat.nextclassified.com/nmadv_admin/)
 
@@ -39,10 +39,10 @@
 前端起初采用了 RequireJS + mustache.js + Bootstrap 框架提高开发效率，响应式布局。因为页面编辑对DOM操作愈发复杂，使用 Vue.js 替代 jQuery + mustache.js；
 实现分页无刷新跳转和搜索筛选排序功能，页面滚动和输入事件中使用Lodash库的debounce函数防抖，使用JavaScript策略模式优化表单验证代码；商家小图片使用dataURL减少HTTP请求和带宽，图片存储CDN使用了Amazon S3；
 使用Gulp优化工作流程及编译Sass；
-后台使用PHP实现Restful API接口，包括图像处理，登陆验证，页面请求，数据库处理；
+后台使用PHP实现Restful API接口，包括图像处理，登陆验证，页面请求，数据库处理。
 
 
-### [升华在线有限公司](https://www.youfind.hk/seo-online.html) (2012.09 - 2014.04)
+### [香港升华在线有限公司](https://www.youfind.hk/seo-online.html) (2012.09 - 2014.04)
 
 #### [Facebook应用开发项目](https://www.facebook.com/istorejw/)
 
