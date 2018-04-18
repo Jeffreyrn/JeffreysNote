@@ -11,6 +11,7 @@
 - 本科 / 西北工业大学 / 计算机科学与技术 / 2007-2011
 - 工作年限: 5年
 - Github: <https://github.com/Jeffreyrn>
+- 博客：<https://segmentfault.com/u/jeffrey>
 - 期望职位: 前端开发 / 深圳
 
 ## 工作经历
