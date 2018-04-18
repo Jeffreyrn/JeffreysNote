@@ -11,7 +11,7 @@
 - 本科 / 西北工业大学 / 计算机科学与技术 / 2007-2011
 - 工作年限: 5年
 - Github: <https://github.com/Jeffreyrn>
-- 博客：<https://segmentfault.com/u/jeffrey>
+- 博客: <https://segmentfault.com/u/jeffrey>
 - 期望职位: 前端开发 / 深圳
 
 ## 工作经历
@@ -30,7 +30,7 @@
 
 #### 七轴机械臂操作平台项目
 
-开发周期两个月，负责实现机械臂仿真模型与模块化任务管理界面的桌面端页面；使用Three.js实现了模型的导入和动画，模型组件化，方便其他模块对其引用和控制；模型界面可以自适应窗口大小，并在窗口resize事件时使用requestAnimationFrame，优化绘制效率性能58%以上；使用WebSocket和后台通信。
+开发周期两个月，负责优化应用性能，实现机械臂仿真模型与模块化任务管理界面的桌面端页面；使用Three.js实现了模型的导入和动画，模型组件化，方便其他模块对其引用和控制，并使用预加载提升模型载入速度；模型界面可以自适应窗口大小，并在窗口resize事件时使用requestAnimationFrame，优化绘制效率性能58%以上；通过内存池模式减少DOM开销；使用WebSocket和后台通信。
 
 ### [香港迈沣集团有限公司](https://www.madmadgroup.com/) (2014.06 - 2016.09)
 
