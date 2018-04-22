@@ -2,5 +2,4 @@
 
 ## 优点
 
-能同时在客户端浏览器和服务端node中使用，API一致
-支持Promise
+能同时在客户端浏览器和服务端node中使用，API一致,支持Promise

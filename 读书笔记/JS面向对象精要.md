@@ -20,7 +20,7 @@
 ## 对象
 
 - 6种假：null undefined 0 false NaN ‘’
-- in 会同时检查object的自有属性和原型属性 hasOwnProperty仅检查自有属性 正如for-in vs Object.keys()
+- in 会同时检查object的自有属性和原型属性 hasOwnProperty仅检查自有属性/可枚举属性 正如for-in/getOwnPropertyByNames vs Object.keys()
 - 属性有两种类型：数据属性(value writable)和访问器属性 访问器属性不包含值 而是定义了一个当属性被读取时调用的函数getter setter
 - 前置下划线是一个约定俗成的命名规范 表示该属性是私有的 实际是它还是公开的
 - 有两个属性特征是数据属性和访问器属性都具有的 enumerable configurable
