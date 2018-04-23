@@ -70,3 +70,7 @@
 http 1.0中默认是关闭的，需要在http头加入"Connection: Keep-Alive"，才能启用Keep-Alive；http 1.1中默认启用Keep-Alive，如果加入"Connection: close "，才关闭
 
 Keep-Alive模式发送玩数据HTTP服务器不会自动断开连接，所有不能再使用返回EOF（-1）来判断，而是使用消息首部字段Conent-Length
+
+## HTTP请求头详解
+
+<https://hubinwei.me/2017/06/05/http%E8%AF%B7%E6%B1%82%E5%A4%B4%E8%AF%A6%E8%A7%A3/>
