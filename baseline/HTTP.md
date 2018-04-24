@@ -40,11 +40,38 @@
 
 ## HTTP 缓存
 
+### 字段
+
+- 公共
+
+cache-control
+
+- 请求
+
+if-match if-none-match if-modifed-since if-unmodified-since
+accept accept-encoding accept-charset accept-language
+cookies
+connection
+host
+refer
+user-agent
+
+- 响应
+
+etag
+set-cookies
+date
+server
+connection
+
+- 参考
+
+<https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers>
+
 ### 客户端决定是否向服务器发送请求
 
-- pragma
-- expire
-- cache-control
+http1.0 => pragma / expire
+http1.1 => cache-control [no-cache, no-store, max-age]
 
 ### 客户端与服务器之间的缓存文件验证
 
@@ -74,3 +101,12 @@ Keep-Alive模式发送玩数据HTTP服务器不会自动断开连接，所有不
 ## HTTP请求头详解
 
 <https://hubinwei.me/2017/06/05/http%E8%AF%B7%E6%B1%82%E5%A4%B4%E8%AF%A6%E8%A7%A3/>
+
+## HTTP2 优点
+
+采用二进制传输 节省了带宽
+TCP多路复用 多个请求可以并行完成
+优先级和流量控制
+支持服务器推送 但需要配置
+<http://www.ruanyifeng.com/blog/2018/03/http2_server_push.html>
+<https://blog.csdn.net/caoxinhui521/article/details/77801976>
