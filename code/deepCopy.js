@@ -13,7 +13,7 @@ function deepCopy1(obj) {
 function deepCopy2(obj) {
   let newobj = new obj.constructor
   Object.keys(obj).forEach((key) => {
-    if (obj[key] && obj[key]==='object'){
+    if (obj[key] && typeof obj[key]==='object'){
       newobj[key] = deepCopy(obj[key])
     }
     else {
