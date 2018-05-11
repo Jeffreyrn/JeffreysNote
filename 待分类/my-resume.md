@@ -1,12 +1,11 @@
-## 联系方式
+> ## 联系方式
 
 - 手机: **17620350273**
 - Email: jeffreywangxiao@gmail.com
 - 微信号: jeffreysama
 
----
-
-## 个人信息
+***
+> ## 个人信息
 
 - **王潇** / 男 / 1989
 - 硕士 / 香港理工大学 / 电子商务 / 2011-2012
@@ -16,9 +15,8 @@
 - 博客: <https://segmentfault.com/u/jeffrey>
 - 期望职位: 前端开发 / 深圳
 
----
-
-## 工作经历
+***
+> ## 工作经历
 
 ### [深圳众为创造科技有限公司](https://www.ufactory.cc) (2016.09 - 2018.04)
 
@@ -62,9 +60,8 @@
 
 [Sino Dynamic官网项目](http://www.sinodynamic.com)： 负责后台搭建和新闻管理的开发，周期1个月，采用了Express.js + Bootstrap 开发，响应式布局。
 
----
-
-## 技能清单
+***
+> ## 技能清单
 
 - 前端语言: JavaScript / SaSS / HTML5 / ECMAScript 6
 - 开发工具: Git / NPM / Shell / VS Code / Electron / Webpack / Gulp / Shell 

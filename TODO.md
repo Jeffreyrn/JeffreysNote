@@ -6,13 +6,20 @@
 
 ## base line
 
+ajax 各种方式
+安全xss csrf
+pwa
+打点/埋点上报
+bind
+throttle
+
 ## 阅读源码
 
 ## 完成作业
 
 <https://juejin.im/post/5a6fe4a0f265da3e46755b25> | 浅谈Webpack的AMD插件开发和运行机制 - 掘金
 <https://juejin.im/timeline> | 掘金
-https://juejin.im/post/5ab633c451882555627d3d70 | 如何轻松拿到大厂面试offer | 掘金技术征文 - 掘金
+<https://juejin.im/post/5ab633c451882555627d3d70> | 如何轻松拿到大厂面试offer | 掘金技术征文 - 掘金
 https://github.com/webpack/webpack/tree/master/lib/dependencies | webpack/lib/dependencies at master · webpack/webpack
 https://github.com/seajs/seajs/issues/242 | CMD 模块定义规范 · Issue #242 · seajs/seajs
 https://github.com/FE-star?utf8=%E2%9C%93&q=showcase&type=&language= | FE-star

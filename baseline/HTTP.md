@@ -22,6 +22,8 @@
 
 ### 40x 请求错误
 
+- 400 请求无效
+- 401.1 未授权：登录失败
 - 403 禁止 forbidden  服务器拒绝请求
 - 404 未找到  服务器找不到请求的网页
 
@@ -110,3 +112,16 @@ TCP多路复用 多个请求可以并行完成
 支持服务器推送 但需要配置
 <http://www.ruanyifeng.com/blog/2018/03/http2_server_push.html>
 <https://blog.csdn.net/caoxinhui521/article/details/77801976>
+
+## 强缓存vs协商缓存
+
+大部分web服务器都默认开启协商缓存，而且是同时启用【Last-Modified，If-Modified-Since】和【ETag、If-None-Match】
+
+分布式系统里多台机器间文件的Last-Modified必须保持一致，以免负载均衡到不同机器导致比对失败；
+
+分布式系统尽量关闭掉ETag(每台机器生成的ETag都会不一样）
+
+- 当ctrl+f5强制刷新网页时，直接从服务器加载，跳过强缓存和协商缓存；
+- 当f5刷新网页时，跳过强缓存，但是会检查协商缓存
+
+[浏览器缓存知识小结及应用](https://www.cnblogs.com/lyzg/p/5125934.html)

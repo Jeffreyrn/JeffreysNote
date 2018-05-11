@@ -24,6 +24,6 @@ console.log(temp) // {a: 3, b: 2, c: 2, d: 1}
 function mainChar(str){
   var arr = str.split('')
   var objCount = arr.reduce((p, current) => {
-    return p.hasOwnProperty(current)? p[current]++:(p[current]=1, p)
+    return p.hasOwnProperty(current)? p[current]++:(p[current]=1, p) // ?
   }, {})
 }

@@ -1,0 +1,31 @@
+上报&安全
+了解以下上报
+
+用户行为
+点击上报
+用户访问路径上报
+第三方统计（Google Analytics、百度统计、CNZZ 等）
+性能
+打点上报
+性能上报
+https://developer.mozilla.org/en-US/docs/Web/API/Performance
+异常处理
+https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onerror
+https://blog.sentry.io/2016/05/17/what-is-script-error
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch
+https://developer.mozilla.org/en-US/docs/Web/Events/unhandledrejection
+了解 unhandledRejection 和 uncaughtException
+安全
+安全是一个非常重要的话题，要了解其攻击的原理和防范的方法，这里推荐两本书给大家，有时间可以先看一下 Web前端黑客技术揭秘 和 白帽子讲Web安全
+这节课由于时间关系，可能不会讲到这里，大家可以先熟悉以下概念
+
+熟悉浏览器的同源策略（之前讲过）
+https://developers.google.cn/web/fundamentals/security/
+https://github.com/chokcoco/httphijack
+了解为什么要用 https
+了解 CSP
+了解 XSS 和 X-XSS-Protection
+了解 CSRF
+了解 clickjacking 和 X-Frame-Options
+
+http://fex.baidu.com/blog/2014/05/build-performance-monitor-in-7-days/

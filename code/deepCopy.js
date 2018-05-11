@@ -22,14 +22,19 @@ function deepCopy2(obj) {
   })
   return newobj
 }
+
 function deepCopy3(obj) {
   return JSON.parse(JSON.stringify(obj))
 }
+
+// object.assign
 function deepCopy4(obj) {
   let newobj
   Object.assign(newobj, obj)
   return newobj
 }
+
+// 利用messageChannel
 function deepCopy5(obj) {
   return new Promise(resolve => {
     const {port1, port2} = new MessageChannel()
