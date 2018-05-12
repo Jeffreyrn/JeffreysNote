@@ -22,7 +22,7 @@
 
 * do｛ ｝会执行一个代码块 返回语句结果值 ES7 取代eval
 * else if方便省掉代码缩进 其实并没有else if 等价于 else ｛if …｝
-* ASL 自动分号插入 automatic semicolon insertion 
+* ASL 自动分号插入 automatic semicolon insertion
 
 ## 异步
 
@@ -34,6 +34,7 @@
 * 微任务 micro task 有process.nextTick, Promises, Object.observe, MutationObserver
 * 宏任务 macro task 有setTimeout, setInterval, setImmediate, I/O, UI rendering
 * 当当前执行栈执行完毕时会立刻先处理所有微任务队列中的事件，然后再去宏任务队列中取出一个事件。同一次事件循环中，微任务永远在宏任务之前执行<https://zhuanlan.zhihu.com/p/33058983>
+
 ## 回调
 
 * 我们的大脑假装并行执行多个任务时 实际上极有可能是在进行快速的上下文切换 切换的如此之快 以至于对外界来说 我们就像并行的执行所有任务 就像js引擎 单线程运行事件循环队列
