@@ -125,3 +125,11 @@ TCP多路复用 多个请求可以并行完成
 - 当f5刷新网页时，跳过强缓存，但是会检查协商缓存
 
 [浏览器缓存知识小结及应用](https://www.cnblogs.com/lyzg/p/5125934.html)
+
+## 三种缓存策略
+
+缓存存储策略：no-store private public
+[no-cache max-age]
+缓存过期策略：expire
+[last-modified]
+缓存对比策略：etag if-modified-since if-none-match
