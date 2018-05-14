@@ -4,14 +4,14 @@
 
 ### node
 
-node.nodetype有 7种 <https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeType>
+node.nodetype有 [7种](https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeType)
 常见的有element text attribute comment document
 
 ### nodelist
 
-是一个节点的集合 是由 Node.childNodes 和 document.querySelectorAll 返回的
-少数情况 使用querySelectorAll返回的是静态nodelist
-大多数情况 使用 getElementById node.childNodes getElementsByName 返回的是动态的nodelist
+- 是一个节点的集合 是由 Node.childNodes 和 document.querySelectorAll 返回的
+- 少数情况 使用querySelectorAll返回的是静态nodelist
+- 大多数情况 使用 getElementById node.childNodes getElementsByName 返回的是动态的nodelist
 
 ### HTMLCollection
 
