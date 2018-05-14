@@ -20,19 +20,19 @@ node.nodetype有 7种 <https://developer.mozilla.org/en-US/docs/Web/API/Node/nod
 
 ## 节点查找
 
-document的方法
+document的方法：
 
-> 返回node
+- 返回node
 
 getElementById 返回一个element对象
 querySelector 返回一个element对象
 
-> 返回nodelist
+- 返回nodelist
 
 getElementByName
 querySelectorAll
 
-> 返回HTMLCollection
+- 返回HTMLCollection
 
 getElementByClassName
 getElementByTagName
@@ -58,7 +58,7 @@ parentNode / parentElement
 
 ---
 
-**children** 仅返回element节点
+**children** 仅返回element(tag)节点 不包括text
 
 **childNodes** 返回所有节点
 
@@ -81,8 +81,7 @@ element.getAttribute
 ## 样式
 
 ```javascript
-element.style.color = 'red
+element.style.color = 'red'
 style = document.createElement('style')
 appendChild(style)
 ```
-

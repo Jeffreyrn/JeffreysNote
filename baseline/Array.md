@@ -12,3 +12,13 @@
 - push / pop
 - shift / unshift
 - fill / copyWithin
+
+```javascript
+fill(value[, start[, end]])
+copyWithin(target, start, end)
+```
+
+>target
+
+- Zero based index at which to copy the sequence to. If negative, target will be counted from the end.
+- If target is at or greater than arr.length, nothing will be copied. If target is positioned after start, the copied sequence will be trimmed to fit arr.length.
