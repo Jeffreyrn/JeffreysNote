@@ -62,6 +62,6 @@ function Person(name) {
 }
 var p1 = new Person('Jeffrey')
 var p2 = Person('Jeffrey')
-p1 instanceof Person // true
-p2 instanceof Person // true
+console.log(p1 instanceof Person) // true
+console.log(p2 instanceof Person) // true
 ```

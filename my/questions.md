@@ -17,3 +17,24 @@ react + flux 可以大规模复杂项目
 vue适合小块灵活
 
 - 人员
+
+## new 发生了什么
+
+1. var o = new Object();
+2. o.__proto__ = A.prototype;//这里还记得之那个function里面的默认的属性么?
+3. A.call(o)//由于这里this是指向o,可以把什么this.name/getName绑定到o上.
+4. 把这个o返回给a;//完成var a = new A()的过程
+
+JavaScript 实际上执行的是：
+
+```javascript
+var o = new Object();
+o.[[Prototype]] = Foo.prototype;
+Foo.call(o);
+```
+
+上面所谓的第4步其实是一个简化的说法.真正的过程是在第3步之后,如果发现A返回是一个Object类型(非primitive类型,即非string,boolean,number,null,undefined类型就是Object类型),则直接返回A的返回值,否则把第1步new的Object返回出去.(默认情况下,JS中函数默认返回值是undefined)
+
+[JS中new到底发生了什么](https://warjiang.github.io/devcat/2016/05/12/JS%E4%B8%ADnew%E5%88%B0%E5%BA%95%E5%8F%91%E7%94%9F%E4%BA%86%E4%BB%80%E4%B9%88/)
+
+## [千万不要在JS中使用连等赋值操作](https://www.cnblogs.com/xxcanghai/p/4998076.html)

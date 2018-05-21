@@ -102,14 +102,25 @@ Keep-Alive模式发送玩数据HTTP服务器不会自动断开连接，所有不
 
 <https://hubinwei.me/2017/06/05/http%E8%AF%B7%E6%B1%82%E5%A4%B4%E8%AF%A6%E8%A7%A3/>
 
+## HTTP vs HTTPS
+
+- port 80 443
+- http->tcp https->ssl/tls->tcp
+- pwa
+
 ## HTTP2 优点
 
-采用二进制传输 节省了带宽
-TCP多路复用 多个请求可以并行完成
-优先级和流量控制
-支持服务器推送 但需要配置
-<http://www.ruanyifeng.com/blog/2018/03/http2_server_push.html>
-<https://blog.csdn.net/caoxinhui521/article/details/77801976>
+- 采用二进制传输 节省了带宽
+- TCP多路复用 多个请求可以并行完成
+- header 压缩
+- 优先级和流量控制
+- 支持服务器推送 但需要配置
+
+ref
+
+- [HTTP,HTTP2.0,SPDY,HTTPS你应该知道的一些事](http://www.alloyteam.com/2016/07/httphttp2-0spdyhttps-reading-this-is-enough/)
+- <http://www.ruanyifeng.com/blog/2018/03/http2_server_push.html>
+- <https://blog.csdn.net/caoxinhui521/article/details/77801976>
 
 ## 强缓存vs协商缓存
 

@@ -14,3 +14,5 @@
 > pointer-events: none; 
 
 实现div disable
+
+[深入理解css3中的flex-grow、flex-shrink、flex-basis](http://zhoon.github.io/css3/2014/08/23/flex.html)

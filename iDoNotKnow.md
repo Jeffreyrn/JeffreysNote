@@ -2,6 +2,8 @@
 
 - [console debug](https://elevenbeans.github.io/2018/03/10/10-Tips-for-JS-Debugging-with-Console/)
 
+- console.dir() Displays an interactive list of the properties of the specified JavaScript object
+
 ## defer vs async
 
 - [彻底搞懂 defer & async](https://segmentfault.com/a/1190000013480391)
