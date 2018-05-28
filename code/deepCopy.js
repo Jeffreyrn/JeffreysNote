@@ -48,3 +48,14 @@ deepCopy5(obj).then(data => {
   newobj = data
   console.log(newobj)
 })
+function deepCopy(obj){
+  const newobj= new obj.constructor
+  for(let index in obj){
+    if(obj.hasOwnProperty(index)){
+      if(obj[index] && typeof obj === 'object')
+       newobj[index]=deepCopy(obj[index])
+      else 
+       newobj[index]=obj[index]
+    }
+  }
+}
