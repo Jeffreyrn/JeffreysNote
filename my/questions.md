@@ -38,3 +38,7 @@ Foo.call(o);
 [JS中new到底发生了什么](https://warjiang.github.io/devcat/2016/05/12/JS%E4%B8%ADnew%E5%88%B0%E5%BA%95%E5%8F%91%E7%94%9F%E4%BA%86%E4%BB%80%E4%B9%88/)
 
 ## [千万不要在JS中使用连等赋值操作](https://www.cnblogs.com/xxcanghai/p/4998076.html)
+
+## [TCP连接的“三次握手”与“四次挥手”](https://blog.csdn.net/u011080472/article/details/51207869)
+
+## use strict

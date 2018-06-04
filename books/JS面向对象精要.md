@@ -27,7 +27,7 @@
 - *Object.defineProperty 被调用时 如果属性不存在 将根据描述对象创建
 - 访问器属性特征比字面形式定义访问器属性的优势在于 可以为已有对象定义这些属性
 - 如果创建一个同时具有数据和访问器的属性 将会出错
-- *Object.defineProperties Object.getOwnPropertyDescriptor
+- *Object.defineProperties Object.getOwnPropertyDescriptor 返回一个属性描述对象 含有四个属性 configurable enumerable 另外两个根据属性类型决定
 
 ### 对象的extensible特性
 
