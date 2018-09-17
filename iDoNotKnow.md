@@ -34,3 +34,6 @@ URL 的长度是受限制的（URL 的最大长度是 2048 个字符）。POST�
 ## split
 
 参数支持正则表达式
+
+## js trim
+The trim() method removes whitespace from both ends of a string
