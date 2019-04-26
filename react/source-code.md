@@ -1,6 +1,19 @@
 [如何理解虚拟DOM?](https://www.zhihu.com/question/29504639/answer/44680878)
 [深度剖析：如何实现一个 Virtual DOM 算法](https://github.com/livoras/blog/issues/13)
 
+### 主要的目录结构
+/events 合成事件
+
+/react
+
+/react-dom
+
+/react-reconciler
+
+/scheduler 调度
+
+/shared 共用代码
+
 ### react 事件
 
 React实现了一套完整的事件合成机制，采用的是顶层document的事件代理机制，能够保持事件冒泡的一致性，同时可以实现跨浏览器执行，甚至可以在IE8中使用HTML5的事件

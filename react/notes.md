@@ -1,0 +1,2 @@
+- 源码中setState调用了this.updater.enqueueSetState(react dom里实现的)
+- updater作为一个参数，让不同的平台(原生）各自去实现

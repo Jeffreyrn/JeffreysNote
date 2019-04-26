@@ -13,3 +13,22 @@ mounted：挂载元素内dom节点的获取
 nextTick：针对单一事件更新数据后立即操作dom
 updated：任何数据的更新，如果要做统一的业务逻辑处理
 watch：监听具体数据变化，并做相应的处理
+
+## $options
+
+包含了vue组件实例中所有的初始化option合集
+
+## vue plugin
+```js
+myPlugin = {
+  install(Vue) {
+    Vue.mixin({
+      created() {}
+    })
+  }
+}
+```
+#render function
+template ->
+compile to render function ->
+return virtual dom -> generate actual dom
