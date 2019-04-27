@@ -31,8 +31,10 @@
 * 异步是关于现在和将来的时间间隙 并行是关于同时发生的事情执行栈与事件队列
 * 事件循环的每一轮称为一个tick 用户交互 io 定时器会向事件队列加入事件 任意时刻 一次只能处理一个事件 执行事件的时候 可能直接或间接引发多个后续事件
 * es6中 引入一个建立在事件循环队列之上的新概念 任务队列 带来了promise异步 事件循环需要重新排到执行栈队尾 任务队列可以插队
-* 微任务 micro task 有process.nextTick, Promises, Object.observe, MutationObserver
-* 宏任务 macro task 有setTimeout, setInterval, setImmediate, I/O, UI rendering
+* 微任务 micro task 
+  有process.nextTick, Promises, Object.observe, MutationObserver, callback, nextTick
+* 宏任务 macro task 
+  有setTimeout, setInterval, setImmediate, I/O, UI rendering, script代码块
 * 当当前执行栈执行完毕时会立刻先处理所有微任务队列中的事件，然后再去宏任务队列中取出一个事件。同一次事件循环中，微任务永远在宏任务之前执行<https://zhuanlan.zhihu.com/p/33058983>
 
 ## 回调

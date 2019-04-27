@@ -4,7 +4,7 @@
 
 jsx需要编译才能运行
 合成事件 vs directive
-渲染数据 jsx vs template
+渲染数据 jsx vs template ：jsx比较动态、难以优化，template静态、方便优化
 更新数据 state props setState 专有接口
 method computed watch 而react要手动实现
 用户输入 语法糖v-model

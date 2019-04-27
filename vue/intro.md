@@ -32,3 +32,10 @@ myPlugin = {
 template ->
 compile to render function ->
 return virtual dom -> generate actual dom
+
+虚拟dom把渲染逻辑从真实dom中解耦/分离出来，便于代码移植到非浏览器环境中，比如服务端，native端
+
+```js
+render: h => h(App);
+```
+h的命名是一种传统，It comes from the term "hyperscript", which is commonly used in many virtual-dom implementations. "Hyperscript" itself stands for "script that generates HTML structures" because HTML is the acronym for "hyper-text markup language".

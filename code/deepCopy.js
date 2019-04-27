@@ -1,15 +1,3 @@
-function deepCopy1(obj) {
-  let newobj = new obj.constructor
-  for(let index in obj) {
-    if (obj[index] && typeof obj[index] === 'object') {
-      newobj[index] = deepCopy(obj[index])
-    }
-    else {
-      newobj[index] = obj[index]
-    }
-  }
-  return newobj
-}
 function deepCopy2(obj) {
   let newobj = new obj.constructor
   Object.keys(obj).forEach((key) => {
@@ -27,13 +15,6 @@ function deepCopy3(obj) {
   return JSON.parse(JSON.stringify(obj))
 }
 
-// object.assign
-function deepCopy4(obj) {
-  let newobj
-  Object.assign(newobj, obj)
-  return newobj
-}
-
 // 利用messageChannel
 function deepCopy5(obj) {
   return new Promise(resolve => {
@@ -48,14 +29,3 @@ deepCopy5(obj).then(data => {
   newobj = data
   console.log(newobj)
 })
-function deepCopy(obj){
-  const newobj= new obj.constructor
-  for(let index in obj){
-    if(obj.hasOwnProperty(index)){
-      if(obj[index] && typeof obj === 'object')
-       newobj[index]=deepCopy(obj[index])
-      else 
-       newobj[index]=obj[index]
-    }
-  }
-}
