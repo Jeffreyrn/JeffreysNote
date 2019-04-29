@@ -59,4 +59,34 @@ function reject(self, newValue){
   self._value=newValue
   finale(self)
 }
-function handle(self, deferred){}
+function handle(self, deferred){
+  while(self._state=3){
+    self=self._value
+  }
+  if (self.state===0){
+    self._deferreds.push(deferred)
+    return;
+  }
+  self._handled=true
+  Promise._immediateFn(function() {
+    var cb=self._state===1?deferred.onFulfilled:deferred.onRejected
+    if(cb===null){
+      (self._state===1?resolve:reject)(deferred.promise, self._value)
+      return;
+    }
+    var ret;
+    try{
+      ret= cb(self._value);
+    }catch(e){
+      reject(deferred.promise,e);
+      return;
+    }
+    resolve(defered.promise,ret)
+  })
+}
+function finale(self){
+  for(var i= 0, len=self._deferreds.length;i<len;i++){
+    handle(self, self._deferreds[i])
+  }
+  self._deferreds=null
+}
