@@ -26,7 +26,8 @@ grunt - gulp - webpack - parcel
 - 微服务化
 
 http express koa eggjs
-中间件 requeset response
+中间件：是一个函数，拦截响应和对象请求，处理之后，或者接受响应，或者传递给下一个中间件
+ requeset response
 ctx.set x-response-time
 
 ## cache

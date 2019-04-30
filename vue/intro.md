@@ -39,3 +39,5 @@ return virtual dom -> generate actual dom
 render: h => h(App);
 ```
 h的命名是一种传统，It comes from the term "hyperscript", which is commonly used in many virtual-dom implementations. "Hyperscript" itself stands for "script that generates HTML structures" because HTML is the acronym for "hyper-text markup language".
+
+## 异步请求尽量放到created里

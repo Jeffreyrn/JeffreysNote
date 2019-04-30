@@ -42,3 +42,12 @@ Foo.call(o);
 ## [TCP连接的“三次握手”与“四次挥手”](https://blog.csdn.net/u011080472/article/details/51207869)
 
 ## use strict
+
+## 常见问题
+- https
+- http code
+- url 输入后
+- 性能优化
+- 跨域
+- cookie ** 为什么资源放到其他域名
+- 闭包，作用域
