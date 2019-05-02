@@ -19,3 +19,5 @@ mutation只做纯函数的状态改变
 - 提供监听器
 
 [Redux复盘整理](https://raimonfuns.github.io/2018/05/03/2018-05-03-redux/)
+
+- mutation只做同步的改变，是因为要对比前后的snapshot，从而记录在dev tools中，如果mutation包含异步的东西，将会使得snapshot的难度大大的增加
