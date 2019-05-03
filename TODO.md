@@ -7,7 +7,6 @@
 ## base line
 
 ajax 各种方式
-安全xss csrf
 pwa
 打点/埋点上报
 bind

@@ -50,4 +50,7 @@ Foo.call(o);
 - 性能优化
 - 跨域
 - cookie ** 为什么资源放到其他域名
-- 闭包，作用域
+- 闭包
+  JavaScript closure is a function which remembers the environment in which it was created.
+  [就是一种允许函数向关联的父级作用域寻址的访问特权](https://www.zhihu.com/question/34547104/answer/59613890)
+- 作用域
