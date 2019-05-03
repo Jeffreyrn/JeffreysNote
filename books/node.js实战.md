@@ -1,3 +1,16 @@
+### 简介
+
+node使用的是为chrome提供动力的v8虚拟机，v8去掉了中间环节，不是执行字节码，也不通过解释器，直接编译为机器码
+
+事件轮询 异步io
+
+node适合数据密集型实时程序，data intensive real time（DIRT）
+
+cookieParser bodyparse limit methodOverride method->_method
+vhost
+
+### node 适合的项目类型
+anything that is not CPU intensive
 ### node世界里流行着2中响应逻辑管理方式：回调、事件监听
 
 回调用来定义一次性的响应逻辑，比如文件读写、数据库查询；

@@ -2,7 +2,7 @@
 
 xhr = xmlHttpRequest
 两者都可以实现ajax(不是一种技术，是术语，Asynchronous JavaScript + XML)
-ajax(jQuery) vs axios(vue)
+jQuery时代是ajax， vue时代是axios
 fetch可以流式传输数据 xhr性能不好
 [fetch 能做哪些 XHR 不能做的事](https://brooch.me/2017/03/10/difference-between-fetch-and-XHR/)
 
@@ -14,7 +14,7 @@ application/x-www-form-url
 
 post比get安全 url暴露参数
 
->GET的语义是请求获取指定的资源。GET方法是安全、幂等(幂等是指同一个请求方法执行多次和仅执行一次的效果完全相同。)、可缓存的（除非有 Cache-ControlHeader的约束）,GET方法的报文主体没有任何语义。POST的语义是根据请求负荷（报文主体）对指定的资源做出处理，具体的处理方式视资源类型而不同。POST不安全，不幂等，（大部分实现）不可缓存。为了针对其不可缓存性，有一系列的方法来进行优化，以后有机会再研究（FLAG已经立起）。还是举一个通俗栗子吧，在微博这个场景里，GET的语义会被用在「看看我的Timeline上最新的20条微博」这样的场景，而POST的语义会被用在「发微博、评论、点赞」这样的场景中。
+>GET的语义是请求获取指定的资源。GET方法是安全、幂等(幂等是指同一个请求方法执行多次和仅执行一次的效果完全相同)、可缓存的（除非有 Cache-Control Header的约束）, GET方法的报文主体没有任何语义。POST的语义是根据请求负荷（报文主体）对指定的资源做出处理，具体的处理方式视资源类型而不同。POST不安全，不幂等，（大部分实现）不可缓存。为了针对其不可缓存性，有一系列的方法来进行优化。还是举一个通俗栗子吧，在微博这个场景里，GET的语义会被用在「看看我的Timeline上最新的20条微博」这样的场景，而POST的语义会被用在「发微博、评论、点赞」这样的场景中。
 
 ## POST 数据提交格式 content-type
 
@@ -102,8 +102,19 @@ req.open();
 typeof cbfn === 'function' && cbfn({"code":1,"msg":"success","data":{"test":"test"}});
 ```
 
-缺点 ：只能get 不能tab之间跨域
+缺点 ：只能get 不能浏览器tab之间跨域
 
 - websocket
 - node中间件
 - CORS
+
+## preflight request
+<https://www.jianshu.com/p/b55086cbd9af>
+<https://stackoverflow.com/questions/15381105/cors-what-is-the-motivation-behind-introducing-preflight-requests>
+为了兼容和支持cors，诞生了预检请求；预检请求照顾了那些古老的，没有部署cors的服务器（These servers may make assumptions that they'll never receive e.g. a cross-domain DELETE request. these services could already be abused by a malicious or non-conforming user agent 即非公认的安全浏览器, and CORS does nothing to change this）；
+“需预检的请求”要求必须首先使用OPTIONS方法发起一个预检请求到服务区，以获知服务器是否允许该实际请求。“预检请求”的使用，可以避免跨域请求对服务器的用户数据产生未预期的影响
+### 定义符合以下所有条件的才为简单请求
+- 请求为post get head
+- 无自定义header
+- content-type为text/plain multpart/form-data application/x-www-form-urlencoded之一， 
+- 参考：[form表单提交](https://www.zhihu.com/question/31592553)，浏览器**跨域策略的本质**是，一个域名的 JS ，在未经允许的情况下，不得读取另一个域名的内容。但浏览器并不阻止你向另一个域名发送请求。

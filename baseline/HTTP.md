@@ -12,7 +12,7 @@
 - 200 (from cache) 成功 服务器已经成功处理了请求
 - 201 已创建 请求成功并且服务器创建了新的资源
 - 202 已连接 服务器已接受请求，但尚未处理
-- 204 无内容
+- 204 无内容 页面不会跳转，停留在当前页面
 
 ### 30x 重定向
 
@@ -42,31 +42,31 @@
 
 ### 字段
 
-- 公共
-
-cache-control
+- 缓存开关：cache-control![关系图](https://img-blog.csdn.net/20180923144907652?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTIzNzU5MjQ=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)、pragma
+- 缓存校验：expire last-modified etag
+- 关系图:![](https://img-blog.csdn.net/20180923144742898?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTIzNzU5MjQ=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
 - 请求
 
-if-match if-none-match if-modifed-since if-unmodified-since
-accept accept-encoding accept-charset accept-language
-cookies
-connection
-host
-refer
-user-agent
+  if-match if-none-match if-modifed-since if-unmodified-since
+  accept accept-encoding accept-charset accept-language
+  cookies
+  connection
+  host
+  refer
+  user-agent
 
 - 响应
 
-etag
-set-cookies
-date
-server
-connection
+  etag
+  set-cookies
+  date
+  server
+  connection
 
 - 参考
 
-<https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers>
+  <https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers>
 
 ### 客户端决定是否向服务器发送请求
 
@@ -88,19 +88,19 @@ http1.1 => cache-control [no-cache, no-store, max-age]
 
 参考
 
-<http://www.cnblogs.com/vajoy/p/5341664.html>
+[浅谈浏览器http的缓存机制](https://www.cnblogs.com/vajoy/p/5341664.html)
+
+[http请求头详解](https://hubinwei.me/2017/06/05/http请求头详解/)
 
 ### Keep-Alive 模式
 
-我们知道HTTP协议采用“请求-应答”模式，当使用普通模式，即非KeepAlive模式时，每个请求/应答客户和服务器都要新建一个连接，完成 之后立即断开连接（HTTP协议为无连接的协议）；当使用Keep-Alive模式（又称持久连接、连接重用）时，Keep-Alive功能使客户端到服 务器端的连接持续有效，当出现对服务器的后继请求时，Keep-Alive功能避免了建立或者重新建立连接。
+我们知道HTTP协议采用“请求-应答”模式，当使用普通模式，即非Keep-Alive模式时，每个请求/应答客户和服务器都要新建一个连接，完成 之后立即断开连接（HTTP协议为无连接的协议）；当使用Keep-Alive模式（又称持久连接、连接重用）时，Keep-Alive功能使客户端到服 务器端的连接持续有效，当出现对服务器的后继请求时，Keep-Alive功能避免了建立或者重新建立连接。
 
 http 1.0中默认是关闭的，需要在http头加入"Connection: Keep-Alive"，才能启用Keep-Alive；http 1.1中默认启用Keep-Alive，如果加入"Connection: close "，才关闭
 
-Keep-Alive模式发送玩数据HTTP服务器不会自动断开连接，所有不能再使用返回EOF（-1）来判断，而是使用消息首部字段Conent-Length
+Keep-Alive模式发送数据结束前HTTP服务器不会自动断开连接，所有不再使用返回EOF（-1）来判断，而是使用消息首部字段Conent-Length
 
-## HTTP请求头详解
-
-<https://hubinwei.me/2017/06/05/http%E8%AF%B7%E6%B1%82%E5%A4%B4%E8%AF%A6%E8%A7%A3/>
+Keep-Alive断开：由TCP的keepAlive心跳检测断开
 
 ## HTTP vs HTTPS
 
@@ -137,19 +137,14 @@ ref
 
 ## 三种缓存策略
 
-缓存存储策略：no-store private public
-[no-cache max-age]
-缓存过期策略：expire
-[last-modified]
-缓存对比策略：etag if-modified-since if-none-match
+- 缓存开关
 
-## preflight request
-<https://www.jianshu.com/p/b55086cbd9af>
-<https://stackoverflow.com/questions/15381105/cors-what-is-the-motivation-behind-introducing-preflight-requests>
-为了兼容和支持cors，诞生了预检请求；预检请求照顾了那些古老的，没有部署cors的服务器（These servers may make assumptions that they'll never receive e.g. a cross-domain DELETE request. these services could already be abused by a malicious or non-conforming user agent 即非公认的安全浏览器, and CORS does nothing to change this）；
-“需预检的请求”要求必须首先使用OPTIONS方法发起一个预检请求到服务区，以获知服务器是否允许该实际请求。“预检请求”的使用，可以避免跨域请求对服务器的用户数据产生未预期的影响
-### 定义符合以下所有条件的才为简单请求
-- 请求为post get head
-- 无自定义header
-- content-type为text/plain multpart/form-data application/x-www-form-urlencoded之一， 
-- 参考：[form表单提交](https://www.zhihu.com/question/31592553)，浏览器**跨域策略的本质**是，一个域名的 JS ，在未经允许的情况下，不得读取另一个域名的内容。但浏览器并不阻止你向另一个域名发送请求。
+  缓存存储策略：no-store private public
+  [no-cache max-age]
+
+- 缓存校验
+
+  缓存过期策略：expire
+  [last-modified]
+  缓存对比策略：etag if-modified-since if-none-match
+
