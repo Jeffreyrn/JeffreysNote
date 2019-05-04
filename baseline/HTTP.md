@@ -72,6 +72,7 @@
 
 http1.0 => pragma / expire
 http1.1 => cache-control [no-cache, no-store, max-age]
+![](https://dailc.github.io/staticResource/blog/basicKnowledge/whenyouenteraurl/http_cache.png)
 
 ### 客户端与服务器之间的缓存文件验证
 

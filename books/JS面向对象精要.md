@@ -24,10 +24,10 @@
 - 属性有两种类型：数据属性(value writable)和访问器属性 访问器属性不包含值 而是定义了一个当属性被读取时调用的函数getter setter
 - 前置下划线是一个约定俗成的命名规范 表示该属性是私有的 实际是它还是公开的
 - 有两个属性特征是数据属性和访问器属性都具有的 enumerable configurable
-- *Object.defineProperty 被调用时 如果属性不存在 将根据描述对象创建
+- Object.defineProperty 被调用时 如果属性不存在 将根据描述对象创建
 - 访问器属性特征比字面形式定义访问器属性的优势在于 可以为已有对象定义这些属性
 - 如果创建一个同时具有数据和访问器的属性 将会出错
-- *Object.defineProperties Object.getOwnPropertyDescriptor 返回一个属性描述对象 含有四个属性 configurable enumerable 另外两个根据属性类型决定
+- Object.defineProperties Object.getOwnPropertyDescriptor 返回一个属性描述对象 含有四个属性 configurable enumerable 另外两个根据属性类型决定
 
 ### 对象的extensible特性
 

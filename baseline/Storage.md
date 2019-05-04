@@ -1,6 +1,6 @@
 ## cookies
 
-参数/属性有 name value secure httpOnly expire domain path comment
+参数/属性有 name value secure httpOnly expire domain path comment sameSite
 
 参考
 

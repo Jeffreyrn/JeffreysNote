@@ -115,6 +115,5 @@ typeof cbfn === 'function' && cbfn({"code":1,"msg":"success","data":{"test":"tes
 “需预检的请求”要求必须首先使用OPTIONS方法发起一个预检请求到服务区，以获知服务器是否允许该实际请求。“预检请求”的使用，可以避免跨域请求对服务器的用户数据产生未预期的影响
 ### 定义符合以下所有条件的才为简单请求
 - 请求为post get head
-- 无自定义header
-- content-type为text/plain multpart/form-data application/x-www-form-urlencoded之一， 
-- 参考：[form表单提交](https://www.zhihu.com/question/31592553)，浏览器**跨域策略的本质**是，一个域名的 JS ，在未经允许的情况下，不得读取另一个域名的内容。但浏览器并不阻止你向另一个域名发送请求。
+- 无自定义header，只有accept-language, accept, content-language, content-type（text/plain multpart/form-data application/x-www-form-urlencoded之一）等
+参考：[form表单提交](https://www.zhihu.com/question/31592553)，浏览器**跨域策略的本质**是，一个域名的 JS ，在未经允许的情况下，不得读取另一个域名的内容。但浏览器并不阻止你向另一个域名发送请求。

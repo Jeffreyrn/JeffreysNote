@@ -1,5 +1,3 @@
-# 正则基础
-
 ## 字面量vs构造函数定义
 
 ### 字面量
@@ -26,3 +24,4 @@ var regex = new RegExp(['pattern', ['g'|'i'|'m']])
 
 - [简短.上篇](http://www.cnblogs.com/giggle/p/5532453.html)
 - [完整教程](https://juejin.im/post/5965943ff265da6c30653879)
+- [迷你书](https://github.com/qdlaoyao/js-regex-mini-book)

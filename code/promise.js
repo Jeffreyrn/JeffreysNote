@@ -90,3 +90,36 @@ function finale(self){
   }
   self._deferreds=null
 }
+/*********************** */
+function Promise(fn){
+  this._state=0
+  this._value=undefined
+  this._handled=false
+  this._deferreds=[]
+  doResolve(fn, this)
+}
+function doResolve(fn, self){
+  var done=false
+  try{
+    fn(
+      function(value){
+        if(done) return;
+        done=true;
+        resolve(self,value)
+      },
+      function(reason){
+        if(done) return;
+        done=false;
+        resolve(self, reason)
+      }
+    )
+  }catch(err){
+    reject(self, err)
+  }
+}
+function reject(self, value){
+  self._state=2
+  self._value=value
+  finale(self)
+}
+function resolve(self,)

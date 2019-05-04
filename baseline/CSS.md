@@ -92,6 +92,13 @@
 
 Block Formatting Contexts
 
+满足下面任一条件的元素，会触发为 BFC ：
+
+- 浮动元素，float 除 none 以外的值
+- 绝对定位元素，position（absolute，fixed）
+- display 为以下其中之一的值 inline-blocks，table-cells，table-captions
+- overflow 除了 visible 以外的值（hidden，auto，scroll）
+
 外边距折叠的规则：仅当两个块级元素相邻并且在同一个块级格式化上下文时，它们垂直方向之间的外边距才会叠加
 
 [详说块级格式化上下文](http://kayosite.com/block-formatting-contexts-in-detail.html)

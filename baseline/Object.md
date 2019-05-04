@@ -22,3 +22,7 @@ console.log(c)//Child {x: 100}
 - constructor ：这是**原型对象**上的一个指向构造函数的属性。
 
 <https://juejin.im/post/5af2a5a76fb9a07ab4589cd7>
+
+## 深入理解
+
+[JavaScript核心（晋级高手必读篇）](http://www.cnblogs.com/TomXu/archive/2012/01/12/2308594.html)
