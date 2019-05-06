@@ -67,8 +67,8 @@
 
 > ## 技能清单
 
-- 前端语言: JavaScript / SaSS / HTML5 / ECMAScript 6 / 微信小程序
+- 前端语言: JavaScript / SaSS / HTML5 / ECMAScript 6 
 - 开发工具: Git Flow / NPM / Shell / VS Code / Electron / Webpack / Gulp 
-- 开发框架: Vue.js / RequireJS / Express.js / ElementUI / React / Three.js
+- 开发框架: Vue.js / 微信小程序 / React/ RequireJS / Express.js / Three.js
 - 后端语言: Node.js / PHP / MySQL / Python / .NET / Java
 - 测试工具: LightHouse / PageSpeed / YSlow / Chrome DevTools

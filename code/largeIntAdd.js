@@ -17,3 +17,24 @@ function largeIntAdd(a, b) {
     arrSum.push(carry)
   return arrSum.reverse().join('')
 }
+
+function largeIntAdd(foo, bar){
+  let fooArr=foo.split('').reverse(), barArr=bar.split('').reverse()
+  let maxlength=Math.max(fooArr.length, barArr.length)
+  let current=0, carry=0
+  let sumArr=[]
+  for(i=0;i<maxlength;i++){
+    if (i< fooArr.length){
+      current+=Number(fooArr[i])
+    }
+    if (i< barArr.length){
+      current+=Number(barArr[i])
+    }
+    sumArr.push(current%10)
+    carry=Math.floor(current/10)
+  }
+  if(carry>0){
+    sumArr.push(carry)
+  }
+  return sumArr.reverse().join('')
+}
