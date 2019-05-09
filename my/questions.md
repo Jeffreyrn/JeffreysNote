@@ -66,3 +66,11 @@ Foo.call(o);
 
 ## [为什么会有变量提升](https://blog.csdn.net/qq_24839991/article/details/80199693)
 js运行时会有词法分析，生成一个Active Object对象；函数内部，首先分析形参，添加到AO，此时为undefined；然后分析变量，只有在AO上不存在变量名时才添加变量；然后分析函数声明，无论AO上是否存在，都会将函数名添加或覆盖到AO
+
+## 动态作用域和词法(静态)作用域
+参考：https://juejin.im/post/5ca1d5176fb9a05e3f51ec93
+
+词法作用域（静态作用域）是在书写代码或者说定义时确定的，而动态作用域是在运行时确定的。词法作用域关注函数在何处声明，而动态作用域关注函数从何处调用，其作用域链是基于运行时的调用栈的
+## 作用域链
+- [JavaScript 开发进阶：理解 JavaScript 作用域和作用域链](http://www.cnblogs.com/lhb25/archive/2011/09/06/javascript-scope-chain.html)
+- [深入理解JavaScript系列（14）：作用域链(Scope Chain)](http://www.cnblogs.com/TomXu/archive/2012/01/18/2312463.html)
