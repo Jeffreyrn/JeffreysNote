@@ -72,5 +72,20 @@ js运行时会有词法分析，生成一个Active Object对象；函数内部�
 
 词法作用域（静态作用域）是在书写代码或者说定义时确定的，而动态作用域是在运行时确定的。词法作用域关注函数在何处声明，而动态作用域关注函数从何处调用，其作用域链是基于运行时的调用栈的
 ## 作用域链
+名词
+- 作用域 scope
+- 执行上下文 execution context
+- 作用域链 scope chain
+要点
+- 每个函数、执行上下文都有自己的作用域
+- 函数的作用域是由定义时而不是运行时决定的
+- 执行上下文是指函数执行时的环境
+- 执行上下文内容有：参数、作用域链、this
+- js编译器管理着一个执行上下文栈，执行一个结束后将会把顶部的执行上下文pop
+- 除了全局作用域(Global Object)，每个作用域都和其他相关的作用域有连接
+- 除了全局作用域是自身，每个子作用域都等于父作用域和自身作用域之和，依次递归，这种父子相邻作用域之间的层级联系叫做作用域链
+- 所有末定义直接赋值的变量自动声明为拥有全局作用域
+来源
+- <https://medium.com/koderlabs/javascript-scope-chain-and-execution-context-simplified-ffb54fc6ad02>
 - [JavaScript 开发进阶：理解 JavaScript 作用域和作用域链](http://www.cnblogs.com/lhb25/archive/2011/09/06/javascript-scope-chain.html)
 - [深入理解JavaScript系列（14）：作用域链(Scope Chain)](http://www.cnblogs.com/TomXu/archive/2012/01/18/2312463.html)
