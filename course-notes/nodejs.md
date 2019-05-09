@@ -1,3 +1,9 @@
+## event loop
+官方文档解释
+
+[node事件循环](http://menzhongxin.com/2017/05/18/node%E4%BA%8B%E4%BB%B6%E5%BE%AA%E7%8E%AF(EventLoop)/)
+
+[Node.js Event Loop 的理解 Timers，process.nextTick()](https://cnodejs.org/topic/57d68794cb6f605d360105bf)
 ## nodejs
 
 - 读github上的node**源码**，建议阅读文件目录lib里的各个js

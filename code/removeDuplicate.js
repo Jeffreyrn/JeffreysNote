@@ -1,15 +1,3 @@
-function removeDuplicate1(arr) {
-  let newarr = []
-  let i, j
-  for(i=0; i<arr.length;i++) {
-    for(j=0; j< newarr.length; j++)
-      if(arr[i] === newarr[j])
-        break;
-    if(newarr.length===j)
-      newarr.push(arr[i])
-  }
-  return newarr
-}
 function removeDuplicate2(arr) {
   let newarr=[]
   let i

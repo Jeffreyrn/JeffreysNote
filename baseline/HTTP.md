@@ -30,7 +30,7 @@
 
 - 501 尚未实施 服务器不具备完成请求的功能。如服务器无法识别请求方法时可能会返回此代码
 - 502 网关错误  服务器作为网关或代理，从上游服务器无法收到无效响应
-- 503 服务器不可用  服务器目前无法使用（由于超载或者停机维护）。通常，这只是暂时状态
+- 503 服务器不可用  服务器*暂时*无法使用（由于超载或者停机维护）
 - 504 网关超时  服务器作为网关代理，但是没有及时从上游服务器收到请求
 - 505 HTTP版本不受支持  服务器不支持请求中所用的HTTP协议版本
 
@@ -48,21 +48,23 @@
 
 - 请求
 
-  if-match if-none-match if-modifed-since if-unmodified-since
-  accept accept-encoding accept-charset accept-language
+  if-none-match if-modifed-since if-unmodified-since if-match *cache-control*
+  accept-encoding accept-language accept-charset accept 
   cookies
-  connection
+  *connection*(close/Keep-Alive)
   host
   refer
   user-agent
 
 - 响应
 
-  etag
+  etag last-modified expire *cache-control*
+  content-encoding content-language content-type
   set-cookies
+  *connection*(close/Keep-Alive)
+  Keep-Alive: timeout=5, max=1000
   date
   server
-  connection
 
 - 参考
 
@@ -95,7 +97,7 @@ http1.1 => cache-control [no-cache, no-store, max-age]
 
 ### Keep-Alive 模式
 
-我们知道HTTP协议采用“请求-应答”模式，当使用普通模式，即非Keep-Alive模式时，每个请求/应答客户和服务器都要新建一个连接，完成 之后立即断开连接（HTTP协议为无连接的协议）；当使用Keep-Alive模式（又称持久连接、连接重用）时，Keep-Alive功能使客户端到服 务器端的连接持续有效，当出现对服务器的后继请求时，Keep-Alive功能避免了建立或者重新建立连接。
+我们知道HTTP协议采用“请求-应答”模式，当使用普通模式，即非Keep-Alive模式时，每个请求/应答客户和服务器都要新建一个连接，完成之后立即断开连接（HTTP协议为无连接的协议）；当使用Keep-Alive模式（又称持久连接、连接重用）时，Keep-Alive功能使客户端到服务器端的连接持续有效，当出现对服务器的后继请求时，Keep-Alive功能避免了建立或者重新建立连接。
 
 http 1.0中默认是关闭的，需要在http头加入"Connection: Keep-Alive"，才能启用Keep-Alive；http 1.1中默认启用Keep-Alive，如果加入"Connection: close "，才关闭
 
@@ -125,7 +127,7 @@ ref
 
 ## 强缓存vs协商缓存
 
-大部分web服务器都默认开启协商缓存，而且是同时启用【Last-Modified，If-Modified-Since】和【ETag、If-None-Match】
+大部分web服务器都默认开启协商缓存，而且是同时启用Last-Modified/If-Modified-Since 和 ETag/If-None-Match
 
 分布式系统里多台机器间文件的Last-Modified必须保持一致，以免负载均衡到不同机器导致比对失败；
 
@@ -145,7 +147,6 @@ ref
 
 - 缓存校验
 
-  缓存过期策略：expire
-  [last-modified]
-  缓存对比策略：etag if-modified-since if-none-match
+  缓存过期策略：expire max-age
+  缓存对比策略： last-modified/if-modified-since etag/if-none-match
 

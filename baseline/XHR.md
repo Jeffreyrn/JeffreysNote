@@ -1,10 +1,11 @@
 ## xhr vs fetch
-
-xhr = xmlHttpRequest
-两者都可以实现ajax(不是一种技术，是术语，Asynchronous JavaScript + XML)
-jQuery时代是ajax， vue时代是axios
-fetch可以流式传输数据 xhr性能不好
-[fetch 能做哪些 XHR 不能做的事](https://brooch.me/2017/03/10/difference-between-fetch-and-XHR/)
+参考课程异步讲解
+- xhr = xmlHttpRequest
+- 两者都可以实现ajax(不是一种技术，是术语, Asynchronous JavaScript XML)
+- jQuery时代是ajax， vue时代是axios
+- fetch可以流式传输数据 xhr性能不好
+- fetch 支持promise
+- [fetch 能做哪些 XHR 不能做的事](https://brooch.me/2017/03/10/difference-between-fetch-and-XHR/)
 
 ## GET编码类型
 
@@ -82,38 +83,3 @@ req.addEventListener("abort", transferCanceled, false);
 
 req.open();
 ```
-
-## 跨域
-
-- 反向代理
-
-委托nginx 设置proxy_pass 服务器不存在跨域
-普通的代理设备是内网用户通过代理设备出外网进行访问，而工作在这种模式下的负载均衡设备，则是外网用户通过代理设备访问内网，因此称之为反向代理
-
-- jsonp
-
-获取到请求的数据：需要服务端做一些判断，当参数中带有callback属性时，返回的type要为application/javascript,把数据作为callback的参数执行
-返回的数据示例
-
-```javascript
-// 请求
-<script> src="http://www.*.com?callback=cbfn"></script>
-// 返回
-typeof cbfn === 'function' && cbfn({"code":1,"msg":"success","data":{"test":"test"}});
-```
-
-缺点 ：只能get 不能浏览器tab之间跨域
-
-- websocket
-- node中间件
-- CORS
-
-## preflight request
-<https://www.jianshu.com/p/b55086cbd9af>
-<https://stackoverflow.com/questions/15381105/cors-what-is-the-motivation-behind-introducing-preflight-requests>
-为了兼容和支持cors，诞生了预检请求；预检请求照顾了那些古老的，没有部署cors的服务器（These servers may make assumptions that they'll never receive e.g. a cross-domain DELETE request. these services could already be abused by a malicious or non-conforming user agent 即非公认的安全浏览器, and CORS does nothing to change this）；
-“需预检的请求”要求必须首先使用OPTIONS方法发起一个预检请求到服务区，以获知服务器是否允许该实际请求。“预检请求”的使用，可以避免跨域请求对服务器的用户数据产生未预期的影响
-### 定义符合以下所有条件的才为简单请求
-- 请求为post get head
-- 无自定义header，只有accept-language, accept, content-language, content-type（text/plain multpart/form-data application/x-www-form-urlencoded之一）等
-参考：[form表单提交](https://www.zhihu.com/question/31592553)，浏览器**跨域策略的本质**是，一个域名的 JS ，在未经允许的情况下，不得读取另一个域名的内容。但浏览器并不阻止你向另一个域名发送请求。
