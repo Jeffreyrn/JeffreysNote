@@ -1,38 +1,42 @@
-# dom原生操作
+# DOM即document
 
 ## 几种对象
 
 ### node
 
-node.nodetype有 [7种](https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeType)
-常见的有element text attribute comment document
+- nodeName
+- nodeValue
+- nodeType
+  有 [7种](https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeType)
+  常见的有element text attribute comment document
 
 ### nodelist
-
+A NodeList object is a collection of nodes. The NodeList interface provides the abstraction of an ordered collection of nodes, without defining or constraining how this collection is implemented. NodeList objects in the DOM are live or static based on the interface used to retrieve them
 - 是一个节点的集合 是由 Node.childNodes 和 document.querySelectorAll 返回的
 - 少数情况 使用querySelectorAll返回的是静态nodelist
 - 大多数情况 使用 getElementById node.childNodes getElementsByName 返回的是动态的nodelist
 
 ### HTMLCollection
 
-是一种特殊的nodelist
-也是即时更新的 当其所包含的文档结构发生改变时，它会自动更新
+An HTMLCollection is a list of nodes. An individual node may be accessed by either ordinal index or the node’s name or id attributes.
+
+是一种特殊的nodelist,也是即时更新的,当其所包含的文档结构发生改变时，它会自动更新
 
 ## 节点查找
 
-document的方法：
+Document的方法：
 
 - 返回node
 
 getElementById 返回一个element对象
 querySelector 返回一个element对象
 
-- 返回nodelist
+- 返回nodeList(节点的集合)
 
-getElementByName
-querySelectorAll
+getElementByName 动态
+querySelectorAll 静态
 
-- 返回HTMLCollection
+- 返回HTMLCollection()
 
 getElementByClassName
 getElementByTagName

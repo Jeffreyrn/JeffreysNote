@@ -3,10 +3,15 @@
 - xhr = xmlHttpRequest
 - 两者都可以实现ajax(不是一种技术，是术语, Asynchronous JavaScript XML)
 - jQuery时代是ajax， vue时代是axios
-- fetch可以流式传输数据 xhr性能不好
-- fetch 支持promise
-- [fetch 能做哪些 XHR 不能做的事](https://brooch.me/2017/03/10/difference-between-fetch-and-XHR/)
 
+fetch 能做哪些 XHR 不能做的事
+- fetch更加底层，可以流式传输数据 xhr性能不好
+- fetch 支持promise
+- with fetch, we can perform no-cors requests, getting a response from a server that doesn't implement CORS
+- Fetch API 并不是指仅仅一个 fetch 方法，还包括 Request、 Response、Headers、Body都一系列原生对象
+xhr 能做，fetch不能
+- abort request
+- report progress
 ## GET编码类型
 
 application/x-www-form-url

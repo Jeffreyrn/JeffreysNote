@@ -26,4 +26,5 @@ function mainChar(str){
   var objCount = arr.reduce((p, current) => {
     return p.hasOwnProperty(current)? p[current]++:(p[current]=1, p) // ?
   }, {})
+  console.log(objCount)
 }
