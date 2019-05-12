@@ -28,13 +28,16 @@ myPlugin = {
   }
 }
 ```
-#render function
+##render function
 template ->
 compile to render function ->
 return virtual dom -> generate actual dom
 
-虚拟dom把渲染逻辑从真实dom中解耦/分离出来，便于代码移植到非浏览器环境中，比如服务端，native端
+虚拟dom
+- 把渲染逻辑从真实dom中解耦/分离出来，便于代码移植到非浏览器环境中，比如服务端，native端
+- 降低了大量dom操作的消耗
 
+基于模板的vue，不灵活但利于优化；基于function的react灵活，因此较难优化；
 ```js
 render: h => h(App);
 ```

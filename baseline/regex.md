@@ -20,8 +20,21 @@ var regex = new RegExp(['pattern', ['g'|'i'|'m']])
 
 ---
 
+## 要点
+* String.split(separator) separator参数被当做 regular expression
+* 分支结构也是惰性 前面的匹配上了 后面的就不再尝试了
+* 位置可以理解为空字符
+* 千分位 12345678 123456789
+* 反向引用 \1 \2 \3
+* 括号嵌套 以左括号 开括号为准
+
+
 ## 参考链接
 
 - [简短.上篇](http://www.cnblogs.com/giggle/p/5532453.html)
 - [完整教程](https://juejin.im/post/5965943ff265da6c30653879)
 - [迷你书](https://github.com/qdlaoyao/js-regex-mini-book)
+
+# 工具
+
+[regexper](regexper.com)

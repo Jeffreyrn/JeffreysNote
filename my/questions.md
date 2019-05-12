@@ -2,13 +2,13 @@
 
 - 代码
 
+react: all in js,利于组件化
 jsx需要编译才能运行
 合成事件 vs directive
 渲染数据 jsx vs template ：jsx比较动态、难以优化，template静态、方便优化
 更新数据 state props setState 专有接口
 method computed watch 而react要手动实现
 用户输入 语法糖v-model
-github上
 vue首屏渲染大量数据慢因为预处理 react改变状态重新渲染慢
 
 - 业务
@@ -89,3 +89,27 @@ js运行时会有词法分析，生成一个Active Object对象；函数内部�
 - <https://medium.com/koderlabs/javascript-scope-chain-and-execution-context-simplified-ffb54fc6ad02>
 - [JavaScript 开发进阶：理解 JavaScript 作用域和作用域链](http://www.cnblogs.com/lhb25/archive/2011/09/06/javascript-scope-chain.html)
 - [深入理解JavaScript系列（14）：作用域链(Scope Chain)](http://www.cnblogs.com/TomXu/archive/2012/01/18/2312463.html)
+
+## 严格模式
+
+特点
+- 使得js的语法更加规范
+- 保证js的运行更高效，安全
+示例
+- 函数内的this不会再指向全局
+- 对象键名不能重复，函数变量不能重复
+- 函数声明只能在作用域的顶层，不允许在非函数的代码块声明
+- 尾递归
+
+## vue router 原理
+
+- 监听hashchange事件，改变响应式的data中的url
+- url改变后由computed返回对应的已经被路由注册过的页面组件名称
+- 将该组件由一个动态组件显示出来
+
+## 项目难题解决
+
+- 大屏地图
+  起初需要设计提供多张3D地图，前端定义自定义的形状覆盖地图；后来，搜索购买了相关地图数据，和设计协商了3D特效的样式，与当前实现方式妥协，成功高效完成了高效果的，可方便维护更新的地图下钻效果；
+
+- 

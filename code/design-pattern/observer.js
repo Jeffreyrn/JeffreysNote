@@ -50,3 +50,4 @@ let o2 = new Observer(2)
 s.add(o)
 s.add(o2)
 s.notify('lol')
+// TODO: EventEmitter

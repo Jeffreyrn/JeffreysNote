@@ -1,52 +1,31 @@
-function observer(obj){
-  Object.keys(obj).forEach(key =>{
-    let currentValue=obj[key]
-    let dep = new Dep()
-    Object.defineProperty(obj, key, {
-      get(){
-        console.log('get')
-        dep.depend()
-        return currentValue
-      },
-      set(newValue){
-        console.log('set')
-        if (newValue !== currentValue) {
-          currentValue = newValue
-          dep.notify()
-        }
-      }
-    })
-  })
+function thousandDivide(str)
+{
+  return str.replace(/(?!^)(?=(\d{3})+$)/g, ',')
 }
-class Dep{
-  constructor(){
-    this.subsciber=new Set()
-  }
-  depend(){
-    if(activeUpdate){
-      this.subsciber.add(activeUpdate)
+console.log(thousandDivide('2434234234348'))
+function swap(){}
+function partition(arr, left, right){
+  var pivoit=left, index=left+1
+  for(var i=index;i<right;i++){
+    if(arr[i]<arr[pivoit]){
+      swap(arr, i, pivoit)
+      index++
     }
   }
-  notify(){
-    this.subsciber.forEach(sub => sub())
-  }
+  swap(arr, pivoit, index-1)
+  return index-1
 }
-let activeUpdate
-function autorun(update){
-  function wrapUpdate(){
-    activeUpdate=wrapUpdate
-    update()
-    activeUpdate=null
-  }
-  wrapUpdate()
-}
-let data={
-  foo: 1
-}
-observer(data)
-// autorun(()=>{
-//   console.log(data.foo)
-// })
+function quickSort(arr, left, right){
+  if(!left) left=0
+  if(!right) right=arr.length
+  if (left< right){
 
-//console.log(data.foo)
-data.foo++
+    var partitionIndex = partition(arr, left, right)
+    quickSort(arr, left, partitionIndex)
+    quickSort(arr, partitionIndex, right)
+  }
+}
+function thDivide(str){
+  return str.replace(/(?!^)(?=(\d{3})+$)/g, ',')
+}
+console.log(thDivide('32342323234234'))
