@@ -1,4 +1,4 @@
-## 选择器
+## [CSS3 选择器](https://segmentfault.com/a/1190000014150884)
 
 - 标签
 - 类
@@ -7,8 +7,6 @@
 - 层次
 - 属性
 - 伪类
-
-<https://segmentfault.com/a/1190000014150884>
 
 ## 选择器类型的优先级是递增的：
 
@@ -88,11 +86,11 @@
 </style>
 ```
 
-## BFC
+## BFC/块级格式化上下文
 
 Block Formatting Contexts
 
-满足下面任一条件的元素，会触发为 BFC ：
+满足下面任一条件（记忆方式：DOPF）的元素，会触发为 BFC ：
 
 - 浮动元素，float 除 none 以外的值
 - 绝对定位元素，position（absolute，fixed）

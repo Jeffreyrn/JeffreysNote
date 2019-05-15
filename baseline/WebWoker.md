@@ -1,6 +1,6 @@
 html5的新特性
 
-webwoker有3种类型
+web woker有3种类型
 
 - woker
 - shared woker

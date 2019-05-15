@@ -7,7 +7,7 @@ jsx需要编译才能运行
 合成事件 vs directive
 渲染数据 jsx vs template ：jsx比较动态、难以优化，template静态、方便优化
 更新数据 state props setState 专有接口
-method computed watch 而react要手动实现
+method computed watch 指令，而react要手动实现
 用户输入 语法糖v-model
 vue首屏渲染大量数据慢因为预处理 react改变状态重新渲染慢
 
@@ -41,12 +41,10 @@ Foo.call(o);
 
 ## [TCP连接的“三次握手”与“四次挥手”](https://blog.csdn.net/u011080472/article/details/51207869)
 
-## use strict
-
 ## 常见问题
 - https
 - http code
-- url 输入后
+- [浏览器输入网址后发生了什么](http://www.dailichun.com/2018/03/12/whenyouenteraurl.html)
 - 性能优化
 - 跨域
 - cookie ** 为什么资源放到其他域名
@@ -54,10 +52,8 @@ Foo.call(o);
   JavaScript closure is a function which remembers the environment in which it was created.
   [就是一种允许函数向关联的父级作用域寻址的访问特权](https://www.zhihu.com/question/34547104/answer/59613890)
 - 作用域
-
-## 浏览器输入网址后
-
-<http://www.dailichun.com/2018/03/12/whenyouenteraurl.html>
+- 箭头函数
+- use strict
 
 ## 异步有哪几种方式
 
@@ -82,8 +78,8 @@ js运行时会有词法分析，生成一个Active Object对象；函数内部�
 - 执行上下文是指函数执行时的环境
 - 执行上下文内容有：参数、作用域链、this
 - js编译器管理着一个执行上下文栈，执行一个结束后将会把顶部的执行上下文pop
-- 除了全局作用域(Global Object)，每个作用域都和其他相关的作用域有连接
-- 除了全局作用域是自身，每个子作用域都等于父作用域\[\[scopes]]和自身作用域之和，依次递归，这种父子相邻作用域之间的层级联系叫做作用域链
+- 除了全局作用域(Global Object)是自身，每个子作用域都等于父作用域\[\[scopes]]和自身作用域之和
+- 依次递归，这种父子相邻作用域之间的层级联系叫做作用域链
 - 所有末定义直接赋值的变量自动声明为拥有全局作用域
 来源
 - <https://medium.com/koderlabs/javascript-scope-chain-and-execution-context-simplified-ffb54fc6ad02>

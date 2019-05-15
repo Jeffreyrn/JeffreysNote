@@ -2,6 +2,7 @@ function ListNode(value){
   this.value=value
   this.next=null
 }
+// http://techieme.in/reversing-a-singly-linked-list/
 function reverseList(list) {
   var head=list
   var newHead = null;
@@ -25,4 +26,15 @@ var reverseListRecursive = function (node, parent) {
   }
 
   return result;
+}
+function reverseLinkList(link){
+  var head=link.head
+  var newHead=new LinkNode()
+  while(head){
+    var save=head.next
+    head.next=newHead
+    newHead=head
+    head=save
+  }
+  return newHead
 }

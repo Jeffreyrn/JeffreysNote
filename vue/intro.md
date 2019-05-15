@@ -3,7 +3,7 @@
 1. new Vue()初始化实例 开始事件和生命周期的初始化 之后触发beforeCreate
 2. 响应式数据 method computed watch的初始化 之后触发created
 3. el（挂载节点）的初始化 模板编译到render中 之后触发beforeMounted
-4. el被替换 开始渲染render 数据挂载 之后触发mounted
+4. el被替换 开始真实dom的渲染 数据挂载 之后触发mounted
 5. 渲染完毕 data更新后 触发beforeUpdate
 6. 重新编译虚拟dom 重新渲染和patch 触发updated
 

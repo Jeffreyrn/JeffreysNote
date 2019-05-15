@@ -6,21 +6,25 @@
 
 fetch 能做哪些 XHR 不能做的事
 - fetch更加底层，可以流式传输数据 xhr性能不好
-- fetch 支持promise
-- with fetch, we can perform no-cors requests, getting a response from a server that doesn't implement CORS
-- Fetch API 并不是指仅仅一个 fetch 方法，还包括 Request、 Response、Headers、Body都一系列原生对象
-xhr 能做，fetch不能
-- abort request
-- report progress
-## GET编码类型
 
-application/x-www-form-url
+- fetch 支持promise
+
+- with fetch, we can perform no-cors requests, getting a response from a server that doesn't implement CORS
+
+- Fetch API 并不是指仅仅一个 fetch 方法，还包括 Request、 Response、Headers、Body都一系列原生对象
+
+xhr 能做，fetch不能
+
+- abort request
+
+- report progress
 
 ## [get和post区别](https://www.zhihu.com/question/28586791/answer/145424285)
 
-post比get安全 url暴露参数
+- post比get安全：url暴露参数
 
->GET的语义是请求获取指定的资源。GET方法是安全、幂等(幂等是指同一个请求方法执行多次和仅执行一次的效果完全相同)、可缓存的（除非有 Cache-Control Header的约束）, GET方法的报文主体没有任何语义。POST的语义是根据请求负荷（报文主体）对指定的资源做出处理，具体的处理方式视资源类型而不同。POST不安全，不幂等，（大部分实现）不可缓存。为了针对其不可缓存性，有一系列的方法来进行优化。还是举一个通俗栗子吧，在微博这个场景里，GET的语义会被用在「看看我的Timeline上最新的20条微博」这样的场景，而POST的语义会被用在「发微博、评论、点赞」这样的场景中。
+- get比post安全：GET的语义是请求获取指定的资源。GET方法是安全、幂等(幂等是指同一个请求方法执行多次和仅执行一次的效果完全相同)   、可缓存的（除非有 Cache-Control Header的约束）, GET方法的报文主体没有任何语义。POST的语义是根据请求负荷（报文主体）对指 定的资源做出处理变更，具体的处理方式视资源类型而不同。POST不安全，不幂等，（大部分实现）不可缓存。
+- get大小最大1024字节，post没有限制
 
 ## POST 数据提交格式 content-type
 
@@ -72,9 +76,7 @@ text 字符串
 - 设置responseType = arraybuffer 然后使用 new Blob()
 - 或设置responseType = blob 然后直接读取response
 
-可以直接发送二进制
-
-<https://developer.mozilla.org/zh-CN/docs/Web/API/XMLHttpRequest/Sending_and_Receiving_Binary_Data>
+可以直接[发送二进制](https://developer.mozilla.org/zh-CN/docs/Web/API/XMLHttpRequest/Sending_and_Receiving_Binary_Data)
 
 ## 进度接口
 

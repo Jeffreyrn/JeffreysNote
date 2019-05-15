@@ -23,3 +23,21 @@
 - Promise 方法每次都返回一个新的Promise
 - Promise 会存储返回值
 - Promise 拥有状态变化
+
+## 十行版promise
+
+```javascript
+function Promise(fn) {
+    var value = null,
+        callbacks = [];  // callbacks为数组，因为可能同时有很多个回调
+    this.then = function (onFulfilled) {
+        callbacks.push(onFulfilled);
+    };
+    function resolve(value) {
+        callbacks.forEach(function (callback) {
+            callback(value);
+        });
+    }
+    fn(resolve);
+}
+```

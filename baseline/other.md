@@ -8,4 +8,5 @@
 - NaN !==NaN (Number('abc')=NaN, 'abc'!==NaN)
 - null == 0 是false，因为两者都是primitive，没有转换，本来就不相等
 - null ==  undefined，js规定null与undefined互等
-- !![]==true,优先计算!![]是true
+- !![]==true,优先计算!![]是true，**！取反要看后面是什么类型，非boolean类型直接使用ToBoolean()转换**；非六种false的值，ToBoolean后均为true
+- []==false与![]==false均为true，前者为隐式转换，后者因为有！优先被toBoolean转换

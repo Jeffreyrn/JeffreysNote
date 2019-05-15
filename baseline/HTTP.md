@@ -42,7 +42,7 @@
 
 ### 字段
 
-- 缓存开关：cache-control![关系图](https://img-blog.csdn.net/20180923144907652?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTIzNzU5MjQ=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)、pragma
+- 缓存开关：pragma、cache-control![关系图](https://img-blog.csdn.net/20180923144907652?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTIzNzU5MjQ=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 - 缓存校验：expire last-modified etag
 - 关系图:![](https://img-blog.csdn.net/20180923144742898?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTIzNzU5MjQ=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 

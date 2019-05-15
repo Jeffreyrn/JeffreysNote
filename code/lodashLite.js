@@ -17,6 +17,7 @@ function throttle(func, wait) {
     var now = new Date()
     if (now-start>wait){
       func.apply(this, args)
+      start = now
     }
     else {
       clearTimeout(timer)
