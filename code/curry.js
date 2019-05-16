@@ -1,10 +1,8 @@
 function nest(fn, i, args) {
   return function(x) {
     args.push(x)
-    if(i===fn.length)
-      return fn(...args)
-    else
-      return nest(fn, i+1, args)
+    if(i===fn.length) return fn(...args)
+    else return nest(fn, i+1, args)
   }
 }
 function curry(fn) {
