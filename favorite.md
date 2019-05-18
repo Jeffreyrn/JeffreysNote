@@ -10,3 +10,10 @@
 
 - [Grade.js](https://github.com/benhowdle89/grade)：从图片中提取两种主色，并生成互补渐变的背景
 - [tensorspace](https://github.com/tensorspace-team/tensorspace)：神经网络的3D可视化展示框架
+- [rrweb](https://github.com/rrweb-io/rrweb)：录制和播放网页
+- [pix2code](https://github.com/tonybeltramelli/pix2code): Generating Code from a Graphical User Interface Screenshot
+
+## 开发框架
+
+- [rely.js](https://github.com/facebook/relay): Relay is a JavaScript framework for building data-driven React    applications.
+- [nest](https://github.com/nestjs/nest): A progressive Node.js framework for building efficient, scalable, and enterprise-grade server-side applications on top of TypeScript & JavaScript (ES6, ES7, ES8)
