@@ -5,6 +5,7 @@
 - [Lighthouse 自动化网页优化工具 开源](https://developers.google.com/web/tools/lighthouse/)
 - [can i use](https://caniuse.com) provides up-to-date browser support tables for support of front-end web technologies on desktop and mobile web browsers
 - [一览当前浏览器API可获取的设备接口](https://whatwebcando.today/)
+- [汉字笔画顺序](https://github.com/chanind/hanzi-writer)
 
 ## 开源工具
 
