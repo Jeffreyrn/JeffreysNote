@@ -1,5 +1,12 @@
+### 工具
+
 - [练习盲打和打字速度](https://typing.io)
 - [PageSpeed网站速度性能测试](https://developers.google.com/speed/pagespeed/insights/)
 - [Lighthouse 自动化网页优化工具 开源](https://developers.google.com/web/tools/lighthouse/)
 - [can i use](https://caniuse.com) provides up-to-date browser support tables for support of front-end web technologies on desktop and mobile web browsers
 - [一览当前浏览器API可获取的设备接口](https://whatwebcando.today/)
+
+## 开源工具
+
+- [Grade.js](https://github.com/benhowdle89/grade)：从图片中提取两种主色，并生成互补渐变的背景
+- [tensorspace](https://github.com/tensorspace-team/tensorspace)：神经网络的3D可视化展示框架

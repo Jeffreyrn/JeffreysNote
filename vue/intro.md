@@ -14,6 +14,11 @@ nextTick：针对单一事件更新数据后立即操作dom
 updated：任何数据的更新，如果要做统一的业务逻辑处理
 watch：监听具体数据变化，并做相应的处理
 
+
+关于vue的？
+- create 建立缓存对象cache用来保存vnode节点 destroy在组件销毁时清除cache 
+
+
 ## $options
 
 包含了vue组件实例中所有的初始化option合集
