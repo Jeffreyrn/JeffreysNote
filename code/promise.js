@@ -26,7 +26,7 @@ function doResolve(self, fn) {
       },
     );
   } catch (err) {
-    if (done = true) return;
+    if (done) return;
     done = true
     reject(self, err)
   }

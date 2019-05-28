@@ -12,18 +12,21 @@ function debounce(func, timeout) {
 // window resize, button clicked
 function throttle(func, wait) {
   var timer
-  var start= new Date()
+  var lastRan
   return function(...args) {
-    var now = new Date()
-    if (now-start>wait){
+    if (!lastRan){
       func.apply(this, args)
-      start = now
+      lastRan = new Date()
     }
     else {
       clearTimeout(timer)
       timer=setTimeout(() => {
-        func.apply(this, args)
-      }, wait)
+        var current = new Date()
+        if (current - lastRan > limit){
+          func.apply(this, args)
+          lastRan = current
+        }
+      }, wait - (new Date() - lastRan))
     }
   }
 }

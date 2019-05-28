@@ -38,14 +38,14 @@ ctx.set x-response-time
 
 ## cache
 
-lru-cache
-redis<https://www.npmjs.com/package/redis>
+- [lru-cache](https://medium.com/dsinjs/implementing-lru-cache-in-javascript-94ba6755cda9)
+- [redis](https://www.npmjs.com/package/redis)
 
 ## database
 
-mongo
-mongoose
-crud(create read update delete)
+- mongo
+- mongoose
+- CRUD(create read update delete)
 
 ## 有用的资料
 

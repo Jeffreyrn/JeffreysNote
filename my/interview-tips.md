@@ -41,3 +41,5 @@ STAR法则是Situation（背景）、Task（目标）、Action（行动）、Res
 - 最佳面试时间
   11月份到年底，竞争少，
   年底的时候可以从一家公司招聘看出来当年的情况和对明年的信心
+- 可内推阿里678: hopeztm@163.com
+  <https://www.zhihu.com/people/wenxi.zhang/activities>

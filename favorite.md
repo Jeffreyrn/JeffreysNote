@@ -6,6 +6,7 @@
 - [can i use](https://caniuse.com) provides up-to-date browser support tables for support of front-end web technologies on desktop and mobile web browsers
 - [一览当前浏览器API可获取的设备接口](https://whatwebcando.today/)
 - [汉字笔画顺序](https://github.com/chanind/hanzi-writer)
+- [网站截屏](https://screendump.techulus.com)
 
 ## 开源工具
 
@@ -13,8 +14,12 @@
 - [tensorspace](https://github.com/tensorspace-team/tensorspace)：神经网络的3D可视化展示框架
 - [rrweb](https://github.com/rrweb-io/rrweb)：录制和播放网页
 - [pix2code](https://github.com/tonybeltramelli/pix2code): Generating Code from a Graphical User Interface Screenshot
+- [360度商品展示]https://scaleflex.github.io/js-cloudimage-360-view/
 
 ## 开发框架
 
 - [rely.js](https://github.com/facebook/relay): Relay is a JavaScript framework for building data-driven React    applications.
 - [nest](https://github.com/nestjs/nest): A progressive Node.js framework for building efficient, scalable, and enterprise-grade server-side applications on top of TypeScript & JavaScript (ES6, ES7, ES8)
+
+## 教程
+- [FilledStacks/flutter-tutorials](https://github.com/FilledStacks/flutter-tutorials)
