@@ -7,6 +7,7 @@
 - [一览当前浏览器API可获取的设备接口](https://whatwebcando.today/)
 - [汉字笔画顺序](https://github.com/chanind/hanzi-writer)
 - [网站截屏](https://screendump.techulus.com)
+- [node命令行下载youtube视频](https://github.com/synox/youtube-dl-interactive)
 
 ## 开源工具
 
@@ -23,3 +24,4 @@
 
 ## 教程
 - [FilledStacks/flutter-tutorials](https://github.com/FilledStacks/flutter-tutorials)
+- [LeetCodeAnimation](https://github.com/MisterBooo/LeetCodeAnimation)
