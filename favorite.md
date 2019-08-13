@@ -16,12 +16,15 @@
 - [rrweb](https://github.com/rrweb-io/rrweb)：录制和播放网页
 - [pix2code](https://github.com/tonybeltramelli/pix2code): Generating Code from a Graphical User Interface Screenshot
 - [360度商品展示]https://scaleflex.github.io/js-cloudimage-360-view/
+- [full screen pages](https://github.com/alvarotrigo/fullPage.js)
 
 ## 开发框架
 
 - [rely.js](https://github.com/facebook/relay): Relay is a JavaScript framework for building data-driven React    applications.
 - [nest](https://github.com/nestjs/nest): A progressive Node.js framework for building efficient, scalable, and enterprise-grade server-side applications on top of TypeScript & JavaScript (ES6, ES7, ES8)
+- [自动化测试](https://www.cypress.io)
 
 ## 教程
 - [FilledStacks/flutter-tutorials](https://github.com/FilledStacks/flutter-tutorials)
 - [LeetCodeAnimation](https://github.com/MisterBooo/LeetCodeAnimation)
+- [算法可视化](https://algorithm-visualizer.org)

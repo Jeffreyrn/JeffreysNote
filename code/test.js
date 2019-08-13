@@ -1,20 +1,27 @@
-function throttle(fn, wait){
-  var timer
-  var lastRan
-  return function(...args){
-    if(!lastRan){
-      fn.apply(this, args)
-      lastRan = new Date()
-    }
-    else{
-      clearTimeout(timer)
-      timer = setTimeout(() => {
-        var current = new Date()
-        if( (current - lastRan) > wait){
-          fn.apply(this, args)
-          lastRan = current
-        }
-      }, wait - (new Date() - lastRan))
-    }
+// class app {
+//   onClick(){
+//     console.log(1,this)
+//   }
+// }
+function app(){}
+app.prototype.onClick=function(){
+  console.log(this)
+}
+var a=new app()
+
+var b=a.onClick
+
+console.log(typeof b)
+b()
+
+var app2={
+  onClick() {
+    console.log(this)
   }
 }
+
+var b2 = app2.onClick
+
+console.log(typeof b2)
+
+b2()
