@@ -12,3 +12,18 @@
 - 使用 webpack 的 proxy 解决开发时的跨域问题
 - cypress
 - anywhere
+
+## android
+
+```
+killall adb
+```
+
+```
+echo adb reverse tcp:8088 > adbb
+sh adbb
+```
+
+## rn
+
+使用 yarn
