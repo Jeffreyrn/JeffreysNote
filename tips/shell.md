@@ -1,2 +1,2 @@
 - touch xxx.xx
-- http://www.zhenchuanx.com/hls/64/playlist/2rGARwRVKRGNJ4i80zqS11lwXOWu8qCi.m3u8
+- <http://www.zhenchuanx.com/hls/64/playlist/2rGARwRVKRGNJ4i80zqS11lwXOWu8qCi.m3u8>

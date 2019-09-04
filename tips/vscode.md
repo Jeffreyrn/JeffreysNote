@@ -1,3 +1,5 @@
+## vscode
+
 - code sinppets
 - leetcode
 - auto close tag
@@ -9,3 +11,4 @@
 - liver server
 - setting sync
 - gitlens
+- markdown lint

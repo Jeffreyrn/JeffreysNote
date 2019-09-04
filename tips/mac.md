@@ -1,3 +1,5 @@
+# https://www.waitsun.com
+
 - menu bar drag
 - finder favourte drag
 - /user/applications (user only apps)
@@ -13,3 +15,5 @@
 - tencent lemon
 - iina player
 - screen record
+
+- downie3
