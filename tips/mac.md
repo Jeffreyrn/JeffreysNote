@@ -1,6 +1,6 @@
-- 工具栏 拖拽
-- favourte拖拽
-- user文件夹新建applications，用户专有软件
+- menu bar drag
+- finder favourte drag
+- /user/applications (user only apps)
 - go2shell
 - open .
 - code .
@@ -12,3 +12,4 @@
 - nightowl
 - tencent lemon
 - iina player
+- screen record
