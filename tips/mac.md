@@ -1,0 +1,14 @@
+- 工具栏 拖拽
+- favourte拖拽
+- user文件夹新建applications，用户专有软件
+- go2shell
+- open .
+- code .
+- alfred
+- dato
+- space key preview
+- F11
+- gitkraken
+- nightowl
+- tencent lemon
+- iina player

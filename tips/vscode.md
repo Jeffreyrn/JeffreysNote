@@ -1,0 +1,11 @@
+- code sinppets
+- leetcode
+- auto close tag
+- auto rename tag
+- better comments
+- bracket pair colorizer
+- css peek
+- import cose
+- liver server
+- setting sync
+- gitlens
