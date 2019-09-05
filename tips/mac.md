@@ -17,3 +17,5 @@
 - screen record
 
 - downie3
+- keka archiver
+- encrypto
