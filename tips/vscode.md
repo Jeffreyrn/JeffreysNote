@@ -3,7 +3,7 @@
 - code sinppets
 - leetcode
 - auto close tag
-- auto rename tag
+- auto rename tagas
 - better comments
 - bracket pair colorizer
 - css peek
