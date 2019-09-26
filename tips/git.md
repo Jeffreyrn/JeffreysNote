@@ -1,0 +1,1 @@
+- 避免每次输入passphrase: ssh-add ~/.ssh/id_rsa
